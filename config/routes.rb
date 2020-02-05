@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'books', to: 'books#index'
+  devise_for :users
+  root 'books#index'
 end
